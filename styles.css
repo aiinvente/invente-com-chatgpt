@@ -126,3 +126,13 @@ dialog{border:0;border-radius:18px;max-width:min(1100px,94vw);max-height:92vh;pa
  .hero .hero-meta{order:5;width:calc(100% - 40px);margin:18px 20px 0}
  .hero .hero-bottom{order:6;padding-top:24px}
 }
+
+/* Dark brand finish, scoped to the landing page footer. */
+.site-footer{background:radial-gradient(ellipse at 5% 0%,#17477966,transparent 65%),radial-gradient(ellipse at 100% 100%,#29204e66,transparent 65%),linear-gradient(125deg,#0a1b36,#030b1d);color:#c4d3eb;border-top:1px solid #2b4769}
+.site-footer .footer-top{border-top:0}
+.site-footer .footer-top p{color:#a9bad5}
+.site-footer .footer-top strong{color:#ecf2ff}
+.site-footer .back-top{color:#b9d5ff}
+.site-footer .footer-links,.site-footer .footer-bottom{border-color:#ffffff20;color:#b9cae3}
+.site-footer .footer-links a:hover,.site-footer .back-top:hover{color:#89ff00}
+.site-footer .footer-bottom{color:#95a9c8}
