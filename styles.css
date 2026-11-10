@@ -95,3 +95,19 @@ dialog{border:0;border-radius:18px;max-width:min(1100px,94vw);max-height:92vh;pa
 @media(max-width:680px){.overview-banner strong{font-size:19px;max-width:135px}.overview-banner>div{padding:17px 14px}.overview-banner>img{object-position:70% center}}
 
 @media(max-width:680px){.overview-banner strong{font-size:17px;max-width:125px}}
+
+/* Keep intrinsic cover sizes from stretching the mobile text column. */
+@media(max-width:900px){
+ .resources-grid{grid-template-columns:minmax(0,1fr)}
+ .resources-grid>*{min-width:0}
+ .resource-copy,.resource-copy>p{width:100%;max-width:100%;overflow-wrap:break-word}
+ .books-stage{width:100%;max-width:560px;min-height:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px;padding:15px 14px 0;margin:15px auto 0;perspective:none}
+ .books-stage .book{position:relative;inset:auto;width:100%;transform:rotate(-3deg);align-self:start;box-shadow:-3px 4px 0 #c3ccd0,7px 12px 20px #162b3a20}
+ .books-stage .book:nth-child(even){transform:rotate(3deg)}
+ .books-stage .book:hover{transform:translateY(-4px)}
+ .books-caption{position:static;grid-column:1/-1;line-height:1.7;padding:0 6px;font-size:8px}
+}
+
+.partner-name{gap:7px;padding:18px 12px;min-width:0}.partner-name img{width:100%;max-width:135px;height:36px;object-fit:contain}.partner-name img[src$="adapta.svg"]{filter:brightness(0)}.partner-name .partner-symbol{width:25px;height:25px;flex:0 0 25px}.partner-name:last-child span{font-size:17px;letter-spacing:-.04em}
+.partner-name img[src$="topview.webp"]{filter:brightness(0)}
+.partner-name img[src$="wondershare.svg"]{height:49px}
