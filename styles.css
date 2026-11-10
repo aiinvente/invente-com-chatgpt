@@ -111,3 +111,18 @@ dialog{border:0;border-radius:18px;max-width:min(1100px,94vw);max-height:92vh;pa
 .partner-name{gap:7px;padding:18px 12px;min-width:0}.partner-name img{width:100%;max-width:135px;height:36px;object-fit:contain}.partner-name img[src$="adapta.svg"]{filter:brightness(0)}.partner-name .partner-symbol{width:25px;height:25px;flex:0 0 25px}.partner-name:last-child span{font-size:17px;letter-spacing:-.04em}
 .partner-name img[src$="topview.webp"]{filter:brightness(0)}
 .partner-name img[src$="wondershare.svg"]{height:49px}
+
+/* Mobile opening: headline, portrait, then supporting copy and actions. */
+@media(max-width:680px){
+ .hero{padding-top:102px}
+ .hero-inner,.hero-copy{display:contents}
+ .hero .hero-eyebrow{order:0;width:calc(100% - 40px);margin:0 20px 15px}
+ .hero h1{order:1;width:calc(100% - 40px);margin:0 20px;max-width:none}
+ .hero-art{order:2;height:clamp(320px,103vw,440px);margin:18px 0 0;width:100%;flex:none}
+ .hero-art>img{width:100%;max-width:100%;height:100%;left:0;object-fit:cover;object-position:75% center}
+ .hero-shade{background:linear-gradient(180deg,#030b1d 0%,transparent 8%,transparent 86%,#030b1d 100%)}
+ .hero .hero-description{order:3;width:calc(100% - 40px);max-width:none;margin:16px 20px 0}
+ .hero .hero-actions{order:4;width:calc(100% - 40px);margin:23px 20px 0}
+ .hero .hero-meta{order:5;width:calc(100% - 40px);margin:18px 20px 0}
+ .hero .hero-bottom{order:6;padding-top:24px}
+}
